@@ -1,4 +1,51 @@
-Yooooooo
-<router-outlet></router-outlet>
-<mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [autoPlay]="false" muted="muted" (trackEnded)="onEnded($event)"
-            [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="true"></mat-basic-audio-player>
+<!-- <div class="main-container">
+
+
+<div class="inner-container">
+  <div class="left">
+    <div class="text-stuff">
+      <div class="intro-text"></div>
+        <h1>Yo</h1>
+    </div>
+  </div>
+  
+  <div class="right">
+  
+  
+      <div class="music-container">
+          <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [autoPlay]="false" muted="muted" (trackEnded)="onEnded($event)"
+          [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="true"></mat-basic-audio-player>
+      </div> 
+  
+  </div>
+</div>
+
+
+</div> -->
+
+
+
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile class="left">
+    <div class="left-2">
+      <div class="text-stuff">
+        <div class="intro-text"></div>
+          <h1>Yo</h1>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile class="right">
+    
+    <div class="right-2">
+  
+  
+      <div class="music-container">
+          <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [autoPlay]="false" muted="muted" (trackEnded)="onEnded($event)"
+          [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="true"></mat-basic-audio-player>
+      </div> 
+  
+  </div>
+  </mat-grid-tile>
+
+</mat-grid-list>
+
