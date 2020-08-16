@@ -1,0 +1,98 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+$dark-primary-text: rgba(#3b3b3b, 0.87);
+$dark-secondary-text: rgba(#3b3b3b, 0.54);
+$dark-disabled-text: rgba(#3b3b3b, 0.38);
+$dark-dividers: rgba(#3b3b3b, 0.12);
+$dark-focused: rgba(#3b3b3b, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+$mat-hunter-blue: (
+    50 : #e0edf1,
+    100 : #b3d1dc,
+    200 : #80b2c5,
+    300 : #4d93ad,
+    400 : #267c9c,
+    500 : #00658a,
+    600 : #005d82,
+    700 : #005377,
+    800 : #00496d,
+    900 : #00375a,
+    A100 : #8bcaff,
+    A200 : #58b2ff,
+    A400 : #259bff,
+    A700 : #0c8fff,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+
+$mat-hunter-light-blue: (
+    50 : #e1f6ff,
+    100 : #b3e9fe,
+    200 : #80dbfd,
+    300 : #4dccfc,
+    400 : #27c1fc,
+    500 : #01b6fb,
+    600 : #01affa,
+    700 : #01a6fa,
+    800 : #019ef9,
+    900 : #008ef8,
+    A100 : #ffffff,
+    A200 : #ebf6ff,
+    A400 : #b8ddff,
+    A700 : #9fd1ff,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+
+
+
+
+
+$centralus-primary: mat-palette($mat-hunter-blue);
+$centralus-accent: mat-palette($mat-hunter-light-blue);
+$centralus-warn: mat-palette($mat-red);
+
+$centralus-theme: mat-light-theme(
+    $centralus-primary, $centralus-accent, $centralus-warn
+);
+
+
+@include angular-material-theme($centralus-theme);
+
